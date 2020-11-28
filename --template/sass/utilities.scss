@@ -1,0 +1,25 @@
+/* Add utility class here */
+
+.u-app{
+	text-align: center;
+	display:flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	img{
+		width:20rem;
+		height:20rem;
+		animation:rotate infinite 3s ;
+	}
+}
+
+
+@keyframes rotate{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}

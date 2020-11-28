@@ -1,0 +1,22 @@
+{
+  "name": "--template",
+  "version": "1.0.0",
+  "description": "Starter template for plain vanilla project using Sass for styling and few build process",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass ./sass/main.scss ./styles/index.css -w",
+    "compile:sass": "node-sass ./sass/main.scss ./styles/index.css",
+    "css:prefix": "npx postcss ./styles/index.css --use autoprefixer --output ./styles/index.prefix.css",
+    "minify:css":"node-sass ./styles/index.prefix.css ./styles/index.css --output-style compressed",
+    "start": "npm run watch:sass",
+    "build":"npm run compile:sass && npm run css:prefix && npm run minify:css"
+  },
+  "author": "Abhushan A. Joshi",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.0.4",
+    "node-sass": "^5.0.0",
+    "postcss": "^8.1.10",
+    "postcss-cli": "^8.3.0"
+  }
+}
