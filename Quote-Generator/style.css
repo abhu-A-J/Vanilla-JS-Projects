@@ -54,6 +54,10 @@ body {
   text-align: center;
 }
 
+.quote.small-text{
+  font-size:2.3rem;
+}
+
 .author {
   margin: 1rem 0rem;
   text-align: right;
@@ -95,6 +99,26 @@ body {
   fill: #1da1f2;
 }
 
+
+*.hide{
+  display:none;
+}
+
+/* Loading Spinner */
+.loader {
+  border: 12px solid #f3f3f3; /* Light grey */
+  border-top: 12px solid #000; /* Blue */
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 2s linear infinite;
+  margin-top:5rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 /* Media Queries */
 @media only screen and (max-width: 750px) {
   .quote__box {
