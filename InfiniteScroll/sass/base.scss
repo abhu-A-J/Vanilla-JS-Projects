@@ -1,0 +1,21 @@
+/* Reset settings and base styling for browsers */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 1rem=10px
+}
+
+body {
+  line-height: 1.5;
+  box-sizing: border-box;
+  overflow-x: hidden !important;
+  font-family: "", sans-serif;
+  min-height: 100vh;
+}
